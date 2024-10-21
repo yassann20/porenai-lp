@@ -1,81 +1,445 @@
+section {
+	padding: 1px;
+}
+
+img {
+	display: block;
+}
+
+div.heading {
+	background: #fde7ed;
+}
+
+.color-red {
+	color: #ff4d4d !important;
+}
+
 div.container {
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+
 	section.fv {
-        color: red;
+		color: red;
 	}
+
 	section.cta {
+		width: 100%;
+		aspect-ratio: 1600/1292;
+		background-image: url("../images/pc-img/cta-back.png");
+		background-position: center;
+		background-size: cover;
+
 		p {
+			font-size: min(35px, calc(35/1600*100vw));
+			font-weight: normal;
+			text-align: center;
+			color: #413f3f;
+			opacity: 0.8;
+
+			&:nth-of-type(1) {
+				padding: 170px 0 0;
+			}
 		}
+
 		h2 {
+			font-family: "Noto Sans CJK JP";
+			font-weight: 900;
+			font-size: min(88px, calc(88/1600*100vw));
+			text-align: center;
+			color: #262626;
+			opacity: 0.8;
+
+			span.red {
+				font-family: Korolev;
+				font-weight: bold;
+				font-size: min(142px, calc(142/1600*100vw));
+				text-align: left;
+				color: #ff4d4d;
+
+			}
+
 		}
+
 		img {
+			display: block;
+			width: min(69px, calc(69/1600*100vw));
+			height: auto;
+			margin: 0 auto;
 		}
+
 		a {
+			display: block;
+			width: min(750px, calc(750/1600*100vw));
+			height: min(94px, calc(94/1600*100vw));
+			font-family: "Noto Sans JP";
+			font-weight: bold;
+			font-size: min(30px, calc(30/1600*100vw));
+			line-height: min(94px, calc(94/1600*100vw));
+			text-align: center;
+			color: #fff;
+			background: #317104;
+			box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+			margin: 0 auto;
 		}
 	}
+
 	section.place {
 		div.heading {
+
+
 			h2 {
+				font-family: "Ten Mincho Text";
+				font-weight: normal;
+				font-size: min(68px, calc(68/1600*100vw));
+				text-align: center;
+				color: #5a5a5a;
+				opacity: 0.7;
+
+			}
+
+			p {
+				font-family: "Ten Mincho Text";
+				font-weight: normal;
+				font-size: min(30px, calc(30/1600*100vw));
+				text-align: center;
+				color: #413f3f;
+				opacity: 0.6;
+
+				&:nth-of-type(1) {
+					padding: min(50px, calc(50/1600*100vw)) 0 min(86px, calc(86/1600*100vw));
+				}
+
+				img {
+					display: inline-block;
+					height: min(30px, calc(30/1600*100vw));
+				}
 			}
 		}
+
 		div.place-content {
+			aspect-ratio: 1600/1330;
+			background-image: url("../images/pc-img/place-back.png");
+			background-position: center;
+			background-size: cover;
+
+			p {
+
+				font-family: "Ten Mincho Text";
+				font-weight: normal;
+				font-size: min(37px, calc(37/1600*100vw));
+				line-height: min(70px, calc(70/1600*100vw));
+				text-align: center;
+				color: #413f3f;
+				opacity: 0.8;
+
+			}
+
+			img {
+				display: block;
+				width: min(1031px, calc(1031/1600*100vw));
+				height: min(687px, calc(687/1600*100vw));
+				margin: 0 auto;
+
+			}
 		}
 	}
+
 	section.voice {
 		div.heading {
-			h2 {
+			width: 100%;
+			height: min(243px, calc(243/1600*100vw));
+			background: #fde7ed;
+			padding: 1px;
+
+			img {
+				width: min(1328px, calc(328/1600*100vw));
+				height: min(62px, calc(62/1600*100vw));
+				margin: min(92px, calc(92/1600*100vw)) auto 0;
 			}
 		}
+
 		div.voice-content {
-		}
-	}
-	section.effect {
-		div.heading {
-			h2 {
+			width: 100%;
+			height: min(1419px, calc(1419/1600*100vw));
+			background-image: url("../images/pc-img/voice-back.png");
+			background-position: center;
+			background-size: cover;
+
+			div.voice-content-item {
+				display: flex;
+				justify-content: center;
+				margin: 100px auto;
+
+				div.voice-img-item {
+
+					img {
+						display: block;
+						width: min(280px, calc(280/1600*100vw));
+						height: auto;
+					}
+
+					P {
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(28px, calc(28/1600*100vw));
+						text-align: center;
+						color: #413f3f;
+					}
+				}
+
+				div.voice-text {
+					width: min(834px, calc(834/1600*100vw));
+					margin-left: min(40px, calc(40/1600*100vw));
+
+					h3 {
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(40px, calc(40/1600*100vw));
+						text-align: left;
+						color: #413f3f;
+					}
+
+					p {
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(30px, calc(30/1600*100vw));
+						text-align: left;
+						color: #413f3f;
+					}
+				}
 			}
 		}
+	}
+
+	section.effect {
+
+		div.heading {
+			padding: 1px;
+
+			img {
+				width: min(976px, calc(976/1600*100vw));
+				height: min(167px, calc(167/1600*100vw));
+				margin: min(55px, calc(55/1600*100vw)) auto;
+
+			}
+		}
+
 		div.effect-content {
+			background-image: url("../images/pc-img/effect-back.png");
+			background-position: center;
+			background-size: cover;
+			padding: 1px;
+
+			div.effect-content-heading {
+				width: 100%;
+				background: #fff;
+				opacity: 0.84;
+				margin: min(26px, calc(26/1600*100vw)) auto;
+
+				h3 {
+					font-family: "Hiragino Mincho ProN";
+					font-weight: normal;
+					font-size: min(35px, calc(35/1600*100vw));
+					text-align: center;
+					color: #454545;
+					padding: min(30px, calc(30/1600*100vw)) 0;
+
+				}
+			}
+
+			div.effect-content-outer {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				width: min(862px, calc(862/1600*100vw));
+				height: min(511px, calc(511/1600*100vw));
+				margin: min(27px, calc(27/1600*100vw)) auto;
+
+				div.effect-content-item {
+					width: min(246px, calc(245/1600*100vw));
+					height: min(246px, calc(245/1600*100vw));
+					border-radius: min(123px, calc(123/1600*100vw));
+					background: #fff;
+					opacity: 0.8;
+					filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.16));
+
+					h4 {
+						font-family: "Hiragino Mincho ProN";
+						font-weight: normal;
+						font-size: min(25px, calc(25/1600*100vw));
+						line-height: min(41px, calc(41/1600*100vw));
+						text-align: center;
+						color: #646563;
+
+						&:nth-child(1) {
+							margin: min(45px, calc(45/1600*100vw)) auto min(30px, calc(30/1600*100vw));
+						}
+
+						&:nth-child(2) {
+							margin: min(25px, calc(25/1600*100vw)) auto min(30px, calc(30/1600*100vw));
+						}
+					}
+
+					p {
+						font-family: "Hiragino Mincho ProN";
+						font-weight: normal;
+						font-size: min(30px, calc(30/1600*100vw));
+						line-height: min(41px, calc(41/1600*100vw));
+						text-align: center;
+						color: #347107;
+
+					}
+				}
+			}
 		}
 	}
+
 	section.select {
 		div.heading {
-			h2 {
+			padding: 1px;
+
+			img {
+				width: min(785px, calc(785/1600*100vw));
+				height: min(65px, calc(65/1600*100vw));
+				margin: min(92px, calc(92/1600*100vw)) auto min(85px, calc(85/1600*100vw))
 			}
 		}
+
 		div.select-content {
+			padding: min(70px, calc(70/1600*100vw)) 0 min(34px, calc(34/1600*100vw));
+			;
+
 			div.select-content-item {
+				display: flex;
+				flex-wrap: nowrap;
+				padding-bottom: min(36px, calc(36/1600*100vw));
+
 				img {
+					display: block;
+					width: min(911px, calc(911/1600*100vw));
+					height: auto;
+
 				}
+
 				div.select-content-item-text {
+					width: min(480px, calc(480/1600*100vw));
+					padding-left: min(22px, calc(22/1600*100vw));
+
 					h3 {
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(40px, calc(40/1600*100vw));
+						text-align: left;
+						color: #413f3f;
+						opacity: 0.8;
+						padding-bottom: min(20px, calc(20/1600*100vw));
 					}
+
 					p {
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(23px, calc(23/1600*100vw));
+						line-height: min(42px, calc(42/1600*100vw));
+						text-align: left;
+						color: #413f3f;
+						padding-bottom: min(20px, calc(20/1600*100vw));
+					}
+
+					span {
+
+						font-family: "Ten Mincho Text";
+						font-weight: normal;
+						font-size: min(15px, calc(15/1600*100vw));
+						line-height: min(24px, calc(24/1600*100vw));
+						text-align: left;
+						color: #413f3f;
+
 					}
 				}
 			}
 		}
 	}
+
 	section.qa {
 		div.heading {
-			h2 {
+			padding: min(83px, calc(83/1600*100vw)) 0 min(70px, calc(70/1600*100vw));
+			;
+
+			img {
+				margin: 0 auto;
 			}
 		}
+
 		div.qa-content {
+			width: 100%;
+			height: min(896px, calc(896/1600*100vw));
+			background-image: url("../images/pc-img/qa-back.png");
+			background-position: center;
+			background-size: cover;
+
 			div.qa-content-item {
+				width: calc(100% - min(600px, calc(600/1600*100vw)));
+				margin: 0 auto;
+				padding: min(45px, calc(45/1600*100vw)) 0 min(37px, calc(37/1600*100vw));
+
 				h3 {
+					position: relative;
+					font-family: "Ten Mincho Text";
+					font-weight: normal;
+					font-size: min(35px, calc(35/1600*100vw));
+					text-align: left;
+					color: #413f3f;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: -50%;
+						left: min(-36px, calc(-36/1600*100vw));
+						display: block;
+						width: min(71px, calc(71/1600*100vw));
+						;
+						height: min(93px, calc(93/1600*100vw));
+						;
+						background-image: url("../images/pc-img/Q..png");
+						background-position: center;
+						background-size: cover;
+					}
 				}
+
 				p {
+					font-family: "Ten Mincho Text";
+					font-weight: normal;
+					font-size: min(25px, calc(25/1600*100vw));
+					text-align: left;
+					color: #5a5a5a;
+
 				}
 			}
 		}
 	}
+
 	section.last-text {
-		h3 {
-		}
+		width: 100%;
+		height: min(629px, calc(629/1600*100vw));
+		;
+		background-image: url("../images/pc-img/last-back.png");
+		background-position: center;
+		background-size: cover;
+
 		p {
+			font-family: "Ten Mincho Text";
+			font-weight: normal;
+			font-size: min(38px, calc(38/1600*100vw));
+			text-align: left;
+			color: #413f3f;
+			opacity: 0.7;
+			padding: min(159px, calc(159/1600*100vw)) 0 min(134px, calc(134/1600*100vw)) min(227px, calc(227/1600*100vw));
 		}
 	}
+
 	section.footer {
-		p {
-		}
+		p {}
 	}
 }
